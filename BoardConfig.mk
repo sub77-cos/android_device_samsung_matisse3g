@@ -62,7 +62,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DENSITY := mdpi
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
-BOARD_NO_SECURE_DISCARD := true
 
 # Disable dex pre-optimization
 WITH_DEXPREOPT := false
