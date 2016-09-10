@@ -63,8 +63,5 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DENSITY := mdpi
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
 
-# Disable dex pre-optimization
-WITH_DEXPREOPT := false
- 
 # Avoid CMSDK issues for now
 I_WANT_A_QUAIL_STAR := true
