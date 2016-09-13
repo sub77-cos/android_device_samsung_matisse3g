@@ -61,7 +61,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-TARGET_RECOVERY_DENSITY := mdpi
+TARGET_RECOVERY_DENSITY := xhdpi
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
 
 # Avoid CMSDK issues for now
