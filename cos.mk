@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit some common COS stuff.
-$(call inherit-product, vendor/cos/config/common.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/ms013g/full_ms013g.mk)
