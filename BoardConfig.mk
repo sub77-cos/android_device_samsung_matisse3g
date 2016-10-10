@@ -42,8 +42,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
 TARGET_KERNEL_SOURCE := kernel/samsung/ms013g
-TARGET_KERNEL_CONFIG := cm_msm8226_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := cm_ms013g_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_ms013g_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
  
 # Partitions
