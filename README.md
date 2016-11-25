@@ -1,5 +1,5 @@
-Device Tree For Samsung Galaxy Grand 2
-===================================== 
+Device Tree For Samsung Galaxy Tab 4
+=====================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -10,11 +10,6 @@ Memory  | 1.5GB RAM
 Shipped Android Version | 4.3 ( Currntly 4.4.2 )
 Storage | 8GB
 MicroSD | Up to 64GB
-Battery | 2600 mAh
+Battery | 4000 mAh
 Display | 5.2"
 Camera  | 8 MP, 3264 x 2448 pixels
-
-
-![Galaxy Grand 2](http://cdn1.xda-developers.com/devdb/deviceForum/screenshots/2820/20140223T030741.jpg "Galaxy Grand 2")
-
-This branch is for building CyanogenMod 12.1 Firmware.

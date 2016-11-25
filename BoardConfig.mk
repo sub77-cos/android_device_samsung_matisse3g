@@ -15,21 +15,12 @@
 # Inherit from msm8226-common
 -include device/samsung/msm8226-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := ms013g
+TARGET_OTA_ASSERT_DEVICE := matisse3g, matissewifi
 
 # Properties
-TARGET_SYSTEM_PROP += device/samsung/ms013g/system.prop
+TARGET_SYSTEM_PROP += device/samsung/matisse3g/system.prop
 
-DEVICE_PATH := device/samsung/ms013g
-
-# Audio
-AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
-AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
-
-# Radio
-SIM_COUNT := 2
-TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
-TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
+DEVICE_PATH := device/samsung/matisse3g
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -40,10 +31,10 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.console=null androidboot.hardwa
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
-TARGET_KERNEL_SOURCE := kernel/samsung/ms013g
-TARGET_KERNEL_CONFIG := cyanogenmod_ms013g_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+TARGET_KERNEL_CONFIG := cyanogenmod_matisse3g_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
- 
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
