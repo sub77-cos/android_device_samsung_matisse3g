@@ -44,10 +44,6 @@ TARGET_INIT_VENDOR_LIB := libinit_msm8226
 TARGET_LIBINIT_MSM8226_DEFINES_FILE := device/samsung/matisse3g/init/init_matisse.cpp
 TARGET_UNIFIED_DEVICE := true
 
-# IR Blaster
-BOARD_USES_MS_IR_SIGNAL := true
-#BOARD_IR_HAS_ONE_FREQ_RANGE := true
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
