@@ -50,24 +50,17 @@ BOARD_USES_MS_IR_SIGNAL := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-#BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x3F androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x3F androidboot.bootdevice=msm_sdcc.1
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
-#TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
-#TARGET_KERNEL_CONFIG := cyanogenmod_matisse3g_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+TARGET_KERNEL_CONFIG := cyanogenmod_matisse3g_defconfig
 
-TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
-#TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matissewifi_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01_skt_defconfig
-TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
+KERNEL_TOOLCHAIN             := "/2and/cos/kernel/samsung/msm8226/arm-linux-androideabi-4.9/bin/"
+KERNEL_TOOLCHAIN_PREFIX      := arm-linux-androideabi-
 
-#KERNEL_TOOLCHAIN_PREFIX      := arm-linux-androideabi-
-KERNEL_TOOLCHAIN_PREFIX      := arm-cortex-linux-gnueabi-
-#KERNEL_TOOLCHAIN             := "/2and/cos/kernel/samsung/msm8226/arm-linux-androideabi-4.9/bin/"
-KERNEL_TOOLCHAIN             := "/2and/cos/kernel/samsung/msm8974/arm-cortex-linux-gnueabi-linaro_4.9.4-2015.06/bin/"
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
