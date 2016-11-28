@@ -1,7 +1,7 @@
-From 876250bc8a5dd1317d4162b268c185dc3743d22d Mon Sep 17 00:00:00 2001
+From 137463f869b83dce6f4925b56671a1e98c36d42f Mon Sep 17 00:00:00 2001
 From: Dan Elkouby <streetwalrus@codewalr.us>
 Date: Sat, 26 Nov 2016 20:19:47 +0200
-Subject: [PATCH 2/2] [1/3] Autostartable sshd
+Subject: [PATCH 2/3] Autostartable sshd
 
 - Move directory creation to init script
 - Add init service
