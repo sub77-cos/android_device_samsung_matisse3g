@@ -26,15 +26,15 @@ DEVICE_PATH := device/samsung/matisse3g
 # TARGET_USE_SDCLANG := true # needs commit a0ae50896603b085c9fa0509ff9f79b1f145800b
 # https://developer.qualcomm.com/forum/qdn-forums/software/snapdragon-llvm-compiler-android/33437
 
-ifneq ($(HOST_OS),darwin)
-
-SDCLANG := true
-
-SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
-
-SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
-
-endif
+#ifneq ($(HOST_OS),darwin)
+#
+#SDCLANG := true
+#
+#SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+#
+#SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+#
+#endif
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -47,7 +47,6 @@ TARGET_UNIFIED_DEVICE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 androidboot.selinux=permissive
-#BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x3F androidboot.bootdevice=msm_sdcc.1
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
@@ -75,9 +74,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DENSITY := xhdpi
 TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
-
-# Avoid CMSDK issues for now
-I_WANT_A_QUAIL_STAR := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
